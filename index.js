@@ -8,7 +8,7 @@ const {PORT} = process.env || 3000;
 
 app.use(express.json());
 app.use(logger);
-app.use(joyasRoutes);
+app.use("/joyas", joyasRoutes);
 
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
